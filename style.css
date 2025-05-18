@@ -1,0 +1,298 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1C2541; /* Dark Blue */
+    color: #FFFFFF; /* White */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5BC0BE; /* Teal */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+p {
+    color: #D1D1D1; /* Light Grey */
+    margin-bottom: 1em;
+}
+
+a {
+    color: #FAF33E; /* Bright Yellow */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5BC0BE; /* Teal */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header & Navigation */
+header {
+    background: #3A506B; /* Deep Blue */
+    color: #FFFFFF;
+    padding: 1em 0;
+    border-bottom: 3px solid #5BC0BE; /* Teal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 20px; /* Adjust as needed */
+}
+
+header nav ul {
+    display: flex;
+    padding-right: 20px; /* Adjust as needed */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav ul li a:hover,
+header nav ul li a.nav-active { /* Class for active page link */
+    color: #FAF33E; /* Bright Yellow */
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    min-height: calc(100vh - 160px); /* Adjust based on header/footer height */
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #3A506B; /* Deep Blue */
+    color: #D1D1D1; /* Light Grey */
+    text-align: center;
+    padding: 1.5em 0;
+    border-top: 3px solid #5BC0BE; /* Teal */
+}
+
+footer .social-links p { /* Placeholder styling */
+    margin-bottom: 0.5em;
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Utility Classes */
+.btn {
+    display: inline-block;
+    background: #5BC0BE; /* Teal */
+    color: #1C2541; /* Dark Blue */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #FAF33E; /* Bright Yellow */
+    color: #1C2541;
+}
+
+.btn-primary {
+    background: #FAF33E; /* Bright Yellow */
+    color: #3A506B; /* Deep Blue */
+}
+
+.btn-primary:hover {
+    background: #5BC0BE; /* Teal */
+    color: #1C2541;
+}
+
+/* Page-Specific Classes from planning.md */
+
+/* Index Page (Home/About Me) */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #3A506B; /* Deep Blue for section background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-section img {
+    border-radius: 50%; /* Circular profile image */
+    margin-right: 20px;
+    border: 3px solid #5BC0BE; /* Teal border */
+}
+
+.profile-section div h1 {
+    margin-bottom: 0.2em;
+}
+.profile-section div p {
+    color: #FAF33E; /* Bright Yellow for title */
+    font-size: 1.2em;
+}
+
+.about-section, .skills-section, .current-focus-section {
+    background-color: #2b3a55; /* Slightly lighter than main bg for contrast */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Contact Page */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3A506B; /* Deep Blue */
+    border-radius: 8px;
+}
+
+.contact-form fieldset {
+    border: 2px solid #5BC0BE; /* Teal */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form legend {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #FAF33E; /* Bright Yellow */
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #D1D1D1; /* Light Grey */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #5BC0BE; /* Teal */
+    border-radius: 4px;
+    background-color: #1C2541; /* Dark Blue */
+    color: #FFFFFF; /* White */
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.form-group input[type="checkbox"] + label {
+    display: inline; /* Keep checkbox and label on same line */
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+}
+
+/* Resources Page */
+.resource-list ul {
+    padding-left: 0;
+}
+
+.resource-list li {
+    background-color: #3A506B; /* Deep Blue */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #FAF33E; /* Bright Yellow accent */
+}
+
+.resource-list li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.resource-list li p {
+    font-size: 0.9em;
+    color: #D1D1D1; /* Light Grey */
+    margin-bottom: 0;
+}
+
+/* Projects Page */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #3A506B; /* Deep Blue */
+    border: 1px solid #5BC0BE; /* Teal */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners are rounded if image itself isn't */
+    text-align: center;
+}
+
+.project-card .project-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, might crop */
+    display: block;
+}
+
+.project-card figcaption {
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FAF33E; /* Bright Yellow */
+    font-size: 1.1em;
+}
