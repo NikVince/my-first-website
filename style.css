@@ -281,13 +281,18 @@ footer p {
     border-radius: 8px;
     overflow: hidden; /* Ensures image corners are rounded if image itself isn't */
     text-align: center;
+    display: flex; /* Added for better alignment of caption if image is smaller */
+    flex-direction: column; /* Added for better alignment */
+    justify-content: space-between; /* Added for better alignment */
+    padding: 10px; /* Added padding around card content */
 }
 
 .project-card .project-image {
-    width: 100%;
-    height: 200px; /* Fixed height for consistency */
+    width: 144px; /* Fixed width */
+    height: 144px; /* Fixed height */
     object-fit: cover; /* Cover the area, might crop */
     display: block;
+    margin: 0 auto; /* Center the image if card is wider */
 }
 
 .project-card figcaption {
